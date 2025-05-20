@@ -102,8 +102,8 @@ export default {
       submit: false,
     });
     return {
-      name: "Максим",
-      surname: "Минаев",
+      name: "",
+      surname: "",
       group: "ТСТ-442",
       time: 5,
       conditions: false,

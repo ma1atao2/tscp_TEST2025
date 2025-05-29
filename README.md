@@ -1,4 +1,5 @@
 # tscp_2025_quiz
+Создано студентами РУТ (МИИТ)
 
 ## Project setup
 ```
@@ -17,3 +18,5 @@ yarn build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+

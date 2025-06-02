@@ -12,7 +12,7 @@
         class="text-h6 white--text pl-3"
         style="align-items: center"
       >
-        <p>{{ formattedTime }}</p>
+        <p class="my-3">Время: {{ formattedTime }}</p>
       </v-toolbar-title>
     </v-app-bar>
     <greetingPage @submit="getQuestionPage" v-if="!test_start" />
@@ -399,7 +399,7 @@ export default {
 
       this.timerInterval = setInterval(() => {
         this.remainingTime--;
-        console.log(this.remainingTime);
+        // console.log(this.remainingTime);
         if (this.remainingTime <= 0) {
           this.finishTest();
           clearInterval(this.timerInterval);
@@ -408,12 +408,12 @@ export default {
     },
     nextNumber(i) {
       this.questionNumber += i;
-      console.log(this.questionNumber);
+      // console.log(this.questionNumber);
       this.questionCount++;
     },
     getQuestionPage(data) {
       this.test_start = data.submit;
-      console.log(data);
+      // console.log(data);
       this.form_data = data;
       this.time = this.form_data.time;
       // console.log(data);
@@ -430,7 +430,7 @@ export default {
       // console.log(currentIndex);
       while (currentIndex != 0) {
         let randomIndex = this.getRandomInt(currentIndex);
-        console.log(randomIndex);
+        // console.log(randomIndex);
         currentIndex--;
         [this.questions[currentIndex], this.questions[randomIndex]] = [
           this.questions[randomIndex],
@@ -472,7 +472,7 @@ export default {
       return Math.floor(Math.random() * max);
     },
     finishTest() {
-      console.log("test finished");
+      // console.log("test finished");
       this.test_finished = true;
       clearInterval(this.timerInterval);
       this.checkAnswers();

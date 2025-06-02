@@ -4,7 +4,7 @@
       <v-row>
         <v-col>
           <v-btn
-          @click="debug=false"
+          @click="debug=true"
           x-small block tile text
           >hide_debug</v-btn>
         </v-col>

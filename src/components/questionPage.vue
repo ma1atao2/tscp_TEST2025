@@ -4,7 +4,7 @@
       <!-- <p>{{ formattedTime }}</p> -->
       <v-app-bar flat color="primary">
         <v-toolbar-title class="text-h6 white--text pl-3">
-          <p>Вопрос №{{ questionNumber }}</p>
+          <p class="my-3">Вопрос №{{ questionNumber }}</p>
         </v-toolbar-title>
       </v-app-bar>
       <v-card-text height="150" class="pa-10 text-h6">
@@ -14,7 +14,7 @@
         <p>3) {{ question.answers[2] }}</p>
         <p>4) {{ question.answers[3] }}</p>
       </v-card-text>
-
+      <p class="text-h6 grey--text text--darken-2 text-center">Выберите номер ответа</p>
       <v-card-actions>
         <v-col>
           <v-row>

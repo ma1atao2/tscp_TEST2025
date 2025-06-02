@@ -5,7 +5,7 @@
       <v-app-bar flat color="primary">
         <v-toolbar-title class="text-h6 white--text pl-3">
           <!-- <p>Вопрос №{{ question.id + 1 }}</p> -->
-          <p>Подведение итогов</p>
+          <p class="my-3">Подведение итогов</p>
         </v-toolbar-title>
         <!-- <p class="text-h6 white--text pl-3">{{ formattedTime }}</p> -->
       </v-app-bar>

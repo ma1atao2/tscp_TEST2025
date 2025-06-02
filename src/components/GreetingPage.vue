@@ -1,8 +1,8 @@
 <template>
   <div>
     <v-app-bar flat color="primary">
-      <v-toolbar-title class="text-h6 white--text pl-3">
-        <p>Форма заполнения</p>
+      <v-toolbar-title class="text-h6 white--text pl-1">
+        <p class="mt-3">Форма заполнения</p>
       </v-toolbar-title>
     </v-app-bar>
     <v-card rounded elevation-10 width="100%" class="mx-auto pa-3">
@@ -82,7 +82,7 @@
             </v-text-field>
           </v-col>
         </v-row>
-        <v-row class="pa-3">
+        <v-row class="pa-3 justify-center">
           <v-btn color="primary" @click="submit">Начать тестирование</v-btn>
         </v-row>
       </v-form>
